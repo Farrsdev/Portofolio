@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,43 +13,43 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
             background-color: #f5f7fa;
             color: #333;
             line-height: 1.6;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 1400px;
             margin: 0 auto;
         }
-        
+
         header {
             text-align: center;
             padding: 30px 0;
             margin-bottom: 30px;
         }
-        
+
         h1 {
             color: #2c3e50;
             font-size: 2.5rem;
             margin-bottom: 10px;
         }
-        
+
         .subtitle {
             color: #7f8c8d;
             font-size: 1.1rem;
         }
-        
+
         .profiles-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
         }
-        
+
         .profile-card {
             background-color: white;
             border-radius: 15px;
@@ -58,30 +59,30 @@
             max-width: 400px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .profile-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
         }
-        
+
         .profile-header {
             padding: 25px 20px;
             text-align: center;
             color: white;
         }
-        
+
         .profile-1 .profile-header {
             background: linear-gradient(135deg, #3498db, #2980b9);
         }
-        
+
         .profile-2 .profile-header {
             background: linear-gradient(135deg, #9b59b6, #8e44ad);
         }
-        
+
         .profile-3 .profile-header {
             background: linear-gradient(135deg, #e74c3c, #c0392b);
         }
-        
+
         /* Gaya untuk foto profil - crop tengah dan ukuran proporsional */
         .profile-img-container {
             width: 140px;
@@ -92,7 +93,7 @@
             overflow: hidden;
             position: relative;
         }
-        
+
         .profile-img {
             width: 100%;
             height: 100%;
@@ -100,7 +101,7 @@
             /* Crop dari tengah gambar */
             object-position: center center;
         }
-        
+
         /* Fallback jika gambar tidak ditemukan */
         .profile-img-container::after {
             content: '';
@@ -117,38 +118,38 @@
             font-size: 2rem;
             font-weight: bold;
         }
-        
+
         .profile-1 .profile-img-container::after {
             content: 'FP';
         }
-        
+
         .profile-2 .profile-img-container::after {
             content: 'HB';
         }
-        
+
         .profile-3 .profile-img-container::after {
             content: 'HG';
         }
-        
+
         .profile-name {
             font-size: 1.6rem;
             margin-bottom: 5px;
             font-weight: 700;
         }
-        
+
         .profile-title {
             font-size: 1rem;
             opacity: 0.9;
         }
-        
+
         .profile-body {
             padding: 20px;
         }
-        
+
         .profile-section {
             margin-bottom: 15px;
         }
-        
+
         .profile-section h3 {
             color: #2c3e50;
             margin-bottom: 8px;
@@ -156,19 +157,19 @@
             border-bottom: 2px solid #f0f0f0;
             font-size: 1.2rem;
         }
-        
+
         .profile-section p {
             color: #555;
             font-size: 0.95rem;
         }
-        
+
         .skills {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
             margin-top: 8px;
         }
-        
+
         .skill-tag {
             background-color: #ecf0f1;
             padding: 4px 10px;
@@ -176,22 +177,22 @@
             font-size: 0.85rem;
             color: #2c3e50;
         }
-        
+
         .profile-1 .skill-tag {
             background-color: #d6eaf8;
             color: #21618c;
         }
-        
+
         .profile-2 .skill-tag {
             background-color: #e8daef;
             color: #6c3483;
         }
-        
+
         .profile-3 .skill-tag {
             background-color: #fadbd8;
             color: #922b21;
         }
-        
+
         .profile-footer {
             padding: 15px;
             background-color: #f9f9f9;
@@ -199,7 +200,7 @@
             justify-content: center;
             gap: 12px;
         }
-        
+
         .social-icon {
             display: inline-flex;
             align-items: center;
@@ -211,43 +212,43 @@
             font-size: 1rem;
             transition: transform 0.2s ease;
         }
-        
+
         .social-icon:hover {
             transform: scale(1.1);
         }
-        
+
         .facebook {
             background-color: #3b5998;
         }
-        
+
         .instagram {
             background-color: #e4405f;
         }
-        
+
         .linkedin {
             background-color: #0077b5;
         }
-        
+
         .twitter {
             background-color: #1da1f2;
         }
-        
+
         .github {
             background-color: #333;
         }
-        
+
         .gitlab {
             background-color: #fc6d26;
         }
-        
+
         .stack-overflow {
             background-color: #f48024;
         }
-        
+
         .hackerrank {
             background-color: #2ec866;
         }
-        
+
         footer {
             text-align: center;
             margin-top: 50px;
@@ -255,7 +256,7 @@
             color: #7f8c8d;
             font-size: 0.9rem;
         }
-        
+
         /* Highlight untuk spesialisasi */
         .specialization {
             display: inline-block;
@@ -265,73 +266,74 @@
             font-weight: bold;
             margin-top: 5px;
         }
-        
+
         .profile-1 .specialization {
             background-color: rgba(52, 152, 219, 0.2);
             color: #2980b9;
         }
-        
+
         .profile-2 .specialization {
             background-color: rgba(155, 89, 182, 0.2);
             color: #8e44ad;
         }
-        
+
         .profile-3 .specialization {
             background-color: rgba(231, 76, 60, 0.2);
             color: #c0392b;
         }
-        
+
         @media (max-width: 1200px) {
             .profile-card {
                 max-width: 350px;
             }
         }
-        
+
         @media (max-width: 992px) {
             .profile-card {
                 max-width: 320px;
             }
         }
-        
+
         @media (max-width: 768px) {
             .profiles-container {
                 flex-direction: column;
                 align-items: center;
             }
-            
+
             .profile-card {
                 max-width: 100%;
             }
-            
+
             h1 {
                 font-size: 2rem;
             }
-            
+
             .profile-img-container {
                 width: 130px;
                 height: 130px;
             }
         }
-        
+
         @media (max-width: 480px) {
             .profile-img-container {
                 width: 120px;
                 height: 120px;
             }
-            
+
             .profile-name {
                 font-size: 1.5rem;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
             <h1>Profil Tiga Programmer</h1>
             <p class="subtitle">Tiga teman dengan spesialisasi berbeda di dunia teknologi</p>
         </header>
-        
+
         <div class="profiles-container">
             <!-- Profil Pertama: Fathur (Game Dev) -->
             <div class="profile-card profile-1">
@@ -343,13 +345,15 @@
                     <p class="profile-title">Game Developer</p>
                     <div class="specialization">Spesialisasi: Game Development</div>
                 </div>
-                
+
                 <div class="profile-body">
                     <div class="profile-section">
                         <h3>Tentang Saya</h3>
-                        <p>Saya seorang Game Developer dengan passion menciptakan pengalaman gaming yang imersif. Saya telah mengembangkan berbagai jenis game mulai dari mobile games hingga PC games. Fokus saya adalah pada gameplay yang menarik dan mekanik game yang inovatif.</p>
+                        <p>Saya seorang Game Developer dengan passion menciptakan pengalaman gaming yang imersif. Saya
+                            telah mengembangkan berbagai jenis game mulai dari mobile games hingga PC games. Fokus saya
+                            adalah pada gameplay yang menarik dan mekanik game yang inovatif.</p>
                     </div>
-                    
+
                     <div class="profile-section">
                         <h3>Keahlian Teknis</h3>
                         <div class="skills">
@@ -361,13 +365,14 @@
                             <span class="skill-tag">VR/AR Development</span>
                         </div>
                     </div>
-                    
+
                     <div class="profile-section">
                         <h3>Proyek Terbaru</h3>
-                        <p>Sedang mengembangkan game RPG indie "Chronicles of Aethel" dengan tim kecil beranggotakan 5 orang. Game ini akan dirilis di platform Steam tahun depan.</p>
+                        <p>Sedang mengembangkan game RPG indie "Chronicles of Aethel" dengan tim kecil beranggotakan 5
+                            orang. Game ini akan dirilis di platform Steam tahun depan.</p>
                     </div>
                 </div>
-                
+
                 <div class="profile-footer">
                     <a href="#" class="social-icon github">
                         <i class="fab fa-github"></i>
@@ -383,7 +388,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <!-- Profil Kedua: Habibi (Cyber) -->
             <div class="profile-card profile-2">
                 <div class="profile-header">
@@ -394,13 +399,16 @@
                     <p class="profile-title">Cybersecurity Specialist</p>
                     <div class="specialization">Spesialisasi: Cybersecurity</div>
                 </div>
-                
+
                 <div class="profile-body">
                     <div class="profile-section">
                         <h3>Tentang Saya</h3>
-                        <p>Saya seorang Cybersecurity Specialist dengan fokus pada ethical hacking dan penetration testing. Saya membantu perusahaan mengamankan infrastruktur digital mereka dari ancaman siber. Sertifikasi CEH dan CISSP yang saya miliki membantu dalam melakukan audit keamanan yang komprehensif.</p>
+                        <p>Saya seorang Cybersecurity Specialist dengan fokus pada ethical hacking dan penetration
+                            testing. Saya membantu perusahaan mengamankan infrastruktur digital mereka dari ancaman
+                            siber. Sertifikasi CEH dan CISSP yang saya miliki membantu dalam melakukan audit keamanan
+                            yang komprehensif.</p>
                     </div>
-                    
+
                     <div class="profile-section">
                         <h3>Keahlian Teknis</h3>
                         <div class="skills">
@@ -412,13 +420,14 @@
                             <span class="skill-tag">Security Auditing</span>
                         </div>
                     </div>
-                    
+
                     <div class="profile-section">
                         <h3>Sertifikasi</h3>
-                        <p>Certified Ethical Hacker (CEH), Certified Information Systems Security Professional (CISSP), CompTIA Security+, dan OSCP (Offensive Security Certified Professional).</p>
+                        <p>Certified Ethical Hacker (CEH), Certified Information Systems Security Professional (CISSP),
+                            CompTIA Security+, dan OSCP (Offensive Security Certified Professional).</p>
                     </div>
                 </div>
-                
+
                 <div class="profile-footer">
                     <a href="#" class="social-icon github">
                         <i class="fab fa-github"></i>
@@ -434,7 +443,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <!-- Profil Ketiga: Huga (Competitive Programming) -->
             <div class="profile-card profile-3">
                 <div class="profile-header">
@@ -445,31 +454,36 @@
                     <p class="profile-title">Competitive Programmer</p>
                     <div class="specialization">Spesialisasi: Competitive Programming</div>
                 </div>
-                
+
                 <div class="profile-body">
                     <div class="profile-section">
                         <h3>Tentang Saya</h3>
-                        <p>Saya seorang Competitive Programmer dengan ranking di 100 besar dunia di platform Codeforces. Saya telah memenangkan berbagai kompetisi programming nasional dan internasional. Fokus saya adalah pada algoritma dan struktur data yang optimal untuk menyelesaikan masalah kompleks.</p>
+                        <p>Saya seorang Competitive Programmer dengan ranking di 100 besar dunia di platform Codeforces.
+                            Saya telah memenangkan berbagai kompetisi programming nasional dan internasional. Fokus saya
+                            adalah pada algoritma dan struktur data yang optimal untuk menyelesaikan masalah kompleks.
+                        </p>
                     </div>
-                    
+
                     <div class="profile-section">
                         <h3>Keahlian Teknis</h3>
                         <div class="skills">
                             <span class="skill-tag">Algorithms</span>
                             <span class="skill-tag">Data Structures</span>
                             <span class="skill-tag">C++</span>
-                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Mathematics</span>
                             <span class="skill-tag">Dynamic Programming</span>
                             <span class="skill-tag">Graph Theory</span>
                         </div>
                     </div>
-                    
+
                     <div class="profile-section">
                         <h3>Prestasi</h3>
-                        <p>Juara 1 ICPC Regional Asia 2022, Finalis Google Code Jam 2021, Ranking di 100 besar dunia di Codeforces (max rating: 2350), dan kontributor rutin di platform LeetCode dengan 500+ solusi yang diterima.</p>
+                        <p>Finalis OSN Informatika 2021, Juara 1 ICPC Regional Asia 2022, Finalis Google Code Jam 2021,
+                            Ranking di 100 besar dunia di Codeforces (max rating: 2350), dan kontributor rutin di
+                            platform LeetCode dengan 500+ solusi yang diterima.</p>
                     </div>
                 </div>
-                
+
                 <div class="profile-footer">
                     <a href="#" class="social-icon github">
                         <i class="fab fa-github"></i>
@@ -486,7 +500,7 @@
                 </div>
             </div>
         </div>
-        
+
         <footer>
             <p>&copy; 2023 Profil Tiga Programmer. Dibuat dengan HTML, CSS, dan JavaScript.</p>
         </footer>
@@ -494,15 +508,15 @@
 
     <script>
         // Menambahkan sedikit interaksi
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const profileCards = document.querySelectorAll('.profile-card');
-            
+
             profileCards.forEach(card => {
-                card.addEventListener('mouseenter', function() {
+                card.addEventListener('mouseenter', function () {
                     this.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
                 });
             });
-            
+
             // Efek saat halaman dimuat
             setTimeout(() => {
                 profileCards.forEach((card, index) => {
@@ -510,7 +524,7 @@
                         card.style.opacity = '0';
                         card.style.transform = 'translateY(20px)';
                         card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-                        
+
                         setTimeout(() => {
                             card.style.opacity = '1';
                             card.style.transform = 'translateY(0)';
@@ -518,19 +532,20 @@
                     }, index * 200);
                 });
             }, 300);
-            
+
             // Memeriksa apakah gambar berhasil dimuat
             const images = document.querySelectorAll('.profile-img');
             images.forEach(img => {
-                img.addEventListener('load', function() {
+                img.addEventListener('load', function () {
                     console.log(`Gambar ${this.alt} berhasil dimuat`);
                 });
-                
-                img.addEventListener('error', function() {
+
+                img.addEventListener('error', function () {
                     console.log(`Gambar ${this.alt} tidak ditemukan, menampilkan fallback`);
                 });
             });
         });
     </script>
 </body>
+
 </html>
